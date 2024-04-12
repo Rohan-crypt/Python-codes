@@ -1,9 +1,4 @@
-def maxval(a):
-    max=a[0]
-    for i in a:
-        if (max<i):
-            max=i
-    return max
-a=[10,20,22,28,36,41,12,11,9,27,91]
-no=maxval(a)
-print("Maxvalue in the list is ", no)
+def min_max(list):
+    min_value= filter(lambda x, y: x if x < y else y, list)
+    max_value= filter(lambda x, y: x if x > y else y, list)
+    return min_value,max_value

@@ -1,11 +1,10 @@
-def square(n):
-    return n**2
-def sum(a,b):
-    square(a)
-    return (a+b)
-result=square
-num=int(input("Enter a number"))
-a=result(num)
-print(a)
-s=sum(num,a)
-print(s)
+#Use a class to calculate area and perimeter of a square
+class Area:
+    side=10
+    def area(self):
+        print(pow(self.side,2))
+    def perimeter(self):
+        print(4*self.side)
+Ar=Area()
+Ar.area()
+Ar.perimeter()
